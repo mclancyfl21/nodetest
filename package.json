@@ -1,7 +1,6 @@
 {
   "name": "nodetest",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index",
@@ -13,5 +12,15 @@
   "dependencies": {
     "express": "^4.17.1",
     "nodemon": "^2.0.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mclancyfl21/nodetest.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mclancyfl21/nodetest/issues"
+  },
+  "homepage": "https://github.com/mclancyfl21/nodetest#readme",
+  "description": ""
 }
