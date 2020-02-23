@@ -7,11 +7,8 @@ app.listen(PORT, () => console.log(`server is running on ${PORT}`));
 app.use(express.static(path.join(__dirname,'public')))
 app.get('/', (req,res) => {
 res.sendFile(path.join(__dirname, 'public', 'index.html'));
-//res.sendFile(path.join(__dirname, 'other.js'));
 })
-
-
-
+app.use(express.static(path.join(__dirname,'public')))
 app.get('/button', (req,res) => {
     res.sendFile(path.join(__dirname, 'public', 'button.html'));
     });

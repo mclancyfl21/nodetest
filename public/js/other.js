@@ -3,6 +3,12 @@ function function1(n) {
         document.getElementById('div6').innerHTML='this is a test to assure that shit is working';
     };
     
-//module.exports = {
-//function1
-//};
+    function outPut() {
+        return alert("I am an alert box!");}
+
+
+function output2() {
+    return alert("I am an alert for button 2 clicks");
+    
+}
+

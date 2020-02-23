@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css"/>
 </head>
 <body>
-    <button id='mainButt'>GetButton</button>
+    <div class="divtop">
+        <div class='butt'>
+        <button id='mainButt'>Click here</button>
+        </div>
+    <div class='butt'>
+        <button id='butt2'>Click here2</button>
+    </div>    
+    </div>
+
+    <div class="container">
+    </div>
+    <div class="move">
+        <div class="par">This is some text</div>
+    </div>
 </body>
 </html>
 
+
+<script src='/js/other.js'></script>
 <Script>
-
 document.getElementById('mainButt').addEventListener('mouseover',outPut);
-
-function outPut() {
-return console.log('this button clicks stuff too')};
-
-
-</Script>
+document.getElementById('butt2').addEventListener('click',output2);
+</script>
