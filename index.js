@@ -12,4 +12,6 @@ app.use(express.static(path.join(__dirname,'public')))
 app.get('/button', (req,res) => {
     res.sendFile(path.join(__dirname, 'public', 'button.html'));
     });
-  
+app.get('/grid', (req,res) => {
+        res.sendFile(path.join(__dirname, 'public', 'griddemo.html'));
+        });

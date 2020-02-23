@@ -4,7 +4,9 @@ function function1(n) {
     };
     
     function outPut() {
-        return alert("I am an alert box!");}
+        answer = prompt("Answer Box","");
+        alert(`this was input ${answer}`);
+    }
 
 
 function output2() {
