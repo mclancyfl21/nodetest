@@ -4,8 +4,8 @@ body {
 
 .containerdemo {
   display: grid;
-  grid-template-columns: 2fr 5fr 2fr;
-  grid-template-rows: 200px auto 100px;
+  /*grid-template-columns: 2fr 5fr 2fr;
+  grid-template-rows: 200px auto 100px;*/
   grid-template-areas:
     "head head head"
     "aside main main"
@@ -43,19 +43,29 @@ body {
 }
 .footer {
   display: grid;
-  grid-template-columns: 3fr 3fr 3fr;
+  grid-template-areas: "ftrl ftrc ftrr";
+  min-height: 80px;
   place-items: center center;
   background-color: khaki;
   grid-area: footer;
 }
 
 .footer .ftrl {
-  grid-column-start: 1 2;
+  grid-area: ftrl;
 }
 .footer .ftrc {
-  grid-column-start: 2 3;
+  grid-area: ftrc;
 }
 
 .footer .ftrr {
-  grid-column-start: 3 4;
+  grid-area: ftrr;
+}
+@media (max-width: 700px) {
+  .containerdemo {
+    grid-template-areas:
+      "head"
+      "aside"
+      "main"
+      "footer";
+  }
 }
